@@ -29,3 +29,76 @@
     align-items: center;
    background: var(--color-gradiente);
 }
+#login-form{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: var(--color-light-50);
+    padding: 30px 40px;
+    border-radius: 8px;
+    gap: 30px;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.336);
+
+}
+#form-header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+}
+
+#form-header h1{
+    font-size: 40px;
+    position: relative;
+
+}
+#form-header h1::before{
+    position: absolute;
+    content: '';
+    width: 40%;
+    height: 3px;
+    background-color: var(--color-purple-50);
+    bottom: 10px;
+    border-radius: 5px;
+}
+#mode-icon{
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+#social-media{
+    display: flex;
+    justify-content: space-around;
+
+}
+#social-media i {
+    font-size: 35px;
+}
+
+#social-media i:hover{
+    transform:scale(1.2);
+}
+
+#inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.input-box > label {
+    font-size: 14px;
+    color: var(--color-dark-50);
+}
+.input-field{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    padding: 3px;
+    border-bottom: 1px solid var(--color-purple-50);
+    cursor: text;
+}
+.input-field input{
+    border:none
+}
